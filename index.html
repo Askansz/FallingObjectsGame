@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gambling Game</title>
+    <title>Slot Machine</title>
+    <script type="text/javascript" src="project.js"></script>
   </head>
   <body>
-    <h1>Gambling Game</h1>
-    <button onclick="game()">Start Game</button>
-    <script src="project.js"></script>
+    <h1>Slot Machine</h1>
+    <label for="deposit">Deposit Amount:</label>
+    <input type="text" id="deposit">
+    <br><br>
+    <label for="lines">Number of Lines to Bet on:</label>
+    <input type="text" id="lines">
+    <br><br>
+    <label for="bet">Bet Amount per Line:</label>
+    <input type="text" id="bet">
+    <br><br>
+    <button onclick="playGame()">Spin</button>
+    <br><br>
+    <div id="output"></div>
   </body>
 </html>
